@@ -1,0 +1,1 @@
+java -cp dist/PongOnline.jar br/com/pongclient/Game1
