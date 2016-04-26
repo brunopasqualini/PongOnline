@@ -15,10 +15,10 @@ public class PongServer implements PongProcess{
     private final SocketServer socket;
     private final PongInfo info;
     
-    public PongServer() {
+    public PongServer(int porta) {
         clientes = new ArrayList();
         info     = new PongInfo(this);
-        socket   = new SocketServer(this, 50000);
+        socket   = new SocketServer(this, porta);
     }
     
     public void init(){
